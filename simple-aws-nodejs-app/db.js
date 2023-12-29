@@ -1,12 +1,12 @@
 const {
-    Pool
-  } = require('pg');
-  const db = new Pool({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    password: process.env.DB_PASS,
-    port: process.env.DB_PORT,
-  });
-  
-  exports.db = db;
+  Pool
+} = require('pg');
+const db = new Pool({
+  user: 'postgres',
+  host: '127.0.0.1',
+  database: 'SimpleAWSDB',
+  password: 'veryverysecret',
+  port: 5432,
+});
+
+exports.db = db;

@@ -41,4 +41,3 @@ async function insertInitialData() {
 }
 
 createTable().then(insertInitialData);
-
